@@ -5,7 +5,7 @@
 
 @foreach(auth()->user()->assignedValues as $val)
     <div class="card mb-3">
-        <div class="card-body">{{ $val->value }}</div>
+        <div class="card-body">Your assigned value is: {{ $val->value }}</div>
     </div>
 @endforeach
 @endsection
