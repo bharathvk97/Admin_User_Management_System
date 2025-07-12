@@ -1,6 +1,8 @@
 Firstly clone the project.
-Run composer install command
-Create database in the phpmyamdin
-Migrate and seed the files
-Run the server.
-
+Run composer install command.
+Create database in the phpmyamdin.
+create .env file by coopying of .env example in the project folder.
+use command php artisan key:generate
+use command php artisan migrate 
+use command php artisan db:seed
+Run the server using command php artisan serve
