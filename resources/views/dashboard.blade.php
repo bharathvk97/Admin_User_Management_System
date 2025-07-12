@@ -1,0 +1,11 @@
+@extends('layouts.app')
+
+@section('content')
+<h2 class="mb-4 text-primary fw-bold">{{ auth()->user()->name }}, Welcome to CAMS</h2>
+
+@foreach(auth()->user()->assignedValues as $val)
+    <div class="card mb-3">
+        <div class="card-body">{{ $val->value }}</div>
+    </div>
+@endforeach
+@endsection
