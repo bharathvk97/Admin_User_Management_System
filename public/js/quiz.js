@@ -160,8 +160,10 @@ return `
   };
 
   $(document).ready(() => {
+    $("#loader").fadeIn();
     const loadCategories = () => {
       $.get('/quiz/categories', (data) => {
+        $("#loader").fadeOut();
         renderCategorySlides(data);
         showCatSlide(0);
         $('#category-wrapper').show();

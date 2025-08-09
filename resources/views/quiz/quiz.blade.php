@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+    <div id="loader" style="display:none;">
+        <div class="spinner"></div>
+    </div>
   <div class="online_quiz_header">Online Quiz - Select Quiz Category</div>
   <div class="quiz_container" id="category-wrapper">
     <div id="category-slides"></div>
