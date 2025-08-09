@@ -4,7 +4,7 @@
 <div class="home-wrapper">
     <div class="overlay">
         <div class="container text-center text-white d-flex flex-column justify-content-center align-items-center h-100">
-            <h1 class="display-3 fw-bold">Welcome to CAMS</h1>
+            <h1 class="display-3 fw-bold">Welcome to Techiees Hub</h1>
             <p class="lead">Delivering scalable, high-performance web solutions tailored for your business needs.</p>
 
             @guest

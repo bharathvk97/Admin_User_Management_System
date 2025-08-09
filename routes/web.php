@@ -21,6 +21,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('profile', fn() => view('profile'))->name('profile');
     Route::post('profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::get('/quiz',[ProfileController::class, 'index'])->name('quiz');
+    Route::get('/quiz/categories',[ProfileController::class, 'getCategories']);
+    Route::get('/quiz/fetch/{category}',[ProfileController::class, 'fetchQuestions']);
 
     Route::middleware('admin')->group(function () {
         Route::get('/clients', [AdminClientManageController::class, 'clientsList'])->name('admin.client.list');
